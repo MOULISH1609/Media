@@ -1,0 +1,397 @@
+@import url('https://fonts.google.com/specimen/Playfair+Display?classification=Display&stroke=Serif');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    
+}
+
+body{
+    min-height: 1;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display: flex;
+    background-color:brown;
+}
+
+#root{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid oldlace;
+    box-shadow: 0px 0px 15px gray;
+    overflow-y: scroll;
+
+}
+
+.Header{
+    width: 100%;
+    background-color: ivory;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Home, .Newpost, .About, .Missing{
+    width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color:ivory;
+    
+}
+
+.Newpostform input[type='text'], .Newpostform textarea{
+    margin-right: 0.25rem;
+    outline: none;
+
+}
+
+.post{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.Home, .post a{
+    text-decoration: none;
+    
+}
+
+.Header h1{
+    font-size: 2rem;
+}
+
+.Nav{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Nav{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchForm{
+    width: 80%;
+    padding: 1rem 0 0 0.75rem;
+    
+}
+
+.searchForm input[type="text"]{
+    font-family: 'Open Sans',sans-serif;
+    width: 100;
+    min-height: 48;
+    font-size: 1rem;
+    padding: 0.25rem;
+    outline: none;
+}
+
+.searchForm label{
+    position: absolute;
+    left: -999px;
+    }
+
+    .Nav ul {
+        color: black;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+    }
+
+    .Nav li{
+        padding: 1rem;
+    }
+
+    .newPostForm input[type='text'],.newPostForm textarea{
+        margin-right: 0.25;
+        outline: none;
+    }
+
+    .Missing h2, .PostPage h2,.Missingp, .PostPage p{
+        margin-bottom: 1rem;
+    }
+
+    .PostPage button{
+        height: 48px;
+        min-width: 48px;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background-color:white;
+        color:black;
+        cursor: pointer;
+    }
+    
+    .statusM{
+        margin-top: 2rem;
+    }
+
+    @media only screen and(min-width:610px){
+        html{
+            font-size: 22px;
+        }
+
+        .Header h1{
+            font-size: 2rem;
+        }
+
+        .Nav{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+    }
+
+    @media only screen and(min-width:61px){
+        .Nav ul{
+            text-align: right;
+        }
+        
+        .Nav li:hover, .Nav li:focus, .Nav li:focus a{
+            background-color: black;
+            color: palegoldenrod;
+        }
+        .searchForm{
+            width: 50%;
+            padding: .5rem 0;
+        }
+
+        .searchForm input[type="text"]{
+            margin-left:0.5rem;
+        }
+    }
+
+    .Nav {
+        background-color:rgb(255, 218, 185);
+        color:black;
+        padding: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      
+      .Nav main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .Nav label {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      
+      .Nav input[type="text"] {
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 4px;
+      }
+      
+      .Nav input[type="text"]:focus {
+        outline: none;
+        border-color: black;
+      }
+      
+      .Nav a {
+        color: black;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+      
+      .Nav a:hover {
+        text-decoration: underline;
+      }
+      
+      .Newpost {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 600px;
+        background-color: peachpuff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .Newpost h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color:black;
+      }
+      
+      .Newpostform label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: black;
+      }
+      
+      .Newpostform input[type="text"],
+      .Newpostform textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .Newpostform textarea {
+        resize: vertical; /* Allow vertical resizing */
+        min-height: 150px; /* Set a minimum height */
+      }
+      
+      .Newpostform button {
+        padding: 10px 20px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .Newpostform button:hover {
+        background-color:darkmagenta;
+      }
+
+      .Post {
+        background-color: peachpuff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .Post h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: black;
+      }
+
+      .PostDate {
+        color: black;
+        margin-bottom: 15px;
+      }
+
+      .PostBody {
+        font-size: 16px;
+        color: black;
+        white-space: nowrap; /* Prevent line breaks */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Show ellipsis when content overflows */
+      }
+      
+      /* Style the link */
+      .Post a {
+        text-decoration: none;
+        color: black;
+      }
+      
+      .Post a:hover {
+        text-decoration: underline;
+      }
+
+     /* .Feed {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      
+       Adjust styles for smaller screens 
+      @media (max-width: 768px) {
+        .Feed {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+      }
+      
+       Adjust styles for even smaller screens 
+      @media (max-width: 576px) {
+        .Feed {
+          grid-template-columns: 1fr;
+        }
+      } */
+      .Postpage {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .post {
+        background-color: peachpuff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .post h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: black;
+      }
+      
+      .postDate {
+        color: black;
+        margin-bottom: 15px;
+      }
+      
+      .postBody {
+        font-size: 18px;
+        color:black;
+        margin-bottom: 20px;
+      }
+      
+      .post button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .post button:hover {
+        background-color: #0056b3;
+      }
+      
+      .post button:last-child {
+        margin-right: 0;
+      }
+      
+      .postNotFound {
+        text-align: center;
+        margin-top: 20px;
+        color:black;
+      }
+      
+      .postNotFound a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      
+      .postNotFound a:hover {
+        text-decoration: underline;
+      }
+      
+      
+      
+
+

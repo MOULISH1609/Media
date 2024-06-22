@@ -1,0 +1,100 @@
+{
+  "news": [
+    {
+      "id": "1"
+    },
+    {
+      "id": "2"
+    },
+    {
+      "id": "3"
+    },
+    {
+      "id": "31"
+    },
+    {
+      "id": "311"
+    },
+    {
+      "id": "3111"
+    },
+    {
+      "id": "31111"
+    },
+    {
+      "id": "311111"
+    },
+    {
+      "id": "311111",
+      "title": "club house",
+      "datetime": "February 28,2024:12:12 PM",
+      "body": "first party"
+    },
+    {
+      "id": "2",
+      "title": "project",
+      "datetime": "June 01,2024:26:22 PM",
+      "body": "module"
+    },
+    {
+      "id": "3",
+      "title": "new",
+      "datetime": "June 01,20244:34:00 PM",
+      "body": "work"
+    },
+    {
+      "id": "4"
+    },
+    {
+      "id": "41"
+    },
+    {
+      "id": "411",
+      "title": "HIRING",
+      "datetime": "June 11,2024",
+      "body": "REACT DEVELOPER"
+    },
+    {
+      "id": "4111",
+      "title": "Front End Developer",
+      "datetime": "June 11,2024",
+      "body": "Html Css JavaScript,React js"
+    },
+    {
+      "id": "41111"
+    },
+    {
+      "id": "411111",
+      "title": "Skills",
+      "datetime": "June 11, 20244:33:04 PM",
+      "body": "ios,aws,git,fillter"
+    },
+    {
+      "id": "4111111"
+    },
+    {
+      "id": "41111111",
+      "title": "Hiring Opening",
+      "datetime": "June 18,2024",
+      "body": "Full Stack Developer\n"
+    },
+    {
+      "id": "411111111"
+    },
+    {
+      "id": "4111111111",
+      "title": "Monitpro",
+      "datetime": "June 20,2024",
+      "body": " React Hiring"
+    },
+    {
+      "id": "41111111111"
+    },
+    {
+      "id": "41111111111",
+      "title": "Title",
+      "datetime": "June 20,2024",
+      "body": "Description"
+    }
+  ]
+}
